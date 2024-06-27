@@ -1,7 +1,7 @@
 class ProductionsController < ApplicationController
     def index
         @productions = Production.all 
-        render json: @productions
+        render json: @productions, include: [:film_locations =>{include: [:location]}]
     end 
 
     def show
