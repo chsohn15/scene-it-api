@@ -12,7 +12,7 @@ FilmLocation.destroy_all
 
 louvre = Location.create(name:"Louvre",city:"Paris",country:"France")
 villa_cimbrone = Location.create(name: "Villa Cimbrone", city: "Ravello", country:"Italy")
-ww = Production.create(title:"Wonder Woman",format:"movie")
+ww = Production.create(title:"Wonder Woman",format:"movie",image_url:"https://m.media-amazon.com/images/M/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg")
 
 
 ww_louvre = FilmLocation.create(production_id: ww.id, location_id: louvre.id, scene_description: "The Wayne Enterprises vehicle delivers a suitcase.")
@@ -28,12 +28,12 @@ city_hall = Location.create(name:"City Hall Park",city:"New York City",country:"
 jersey = Location.create(name:"Jersey City Waterfront Promenade",city:"Jersey City",country:"United States")
 fdr = Location.create(name:"Franklin Delano Roosevelt Four Freedoms Park",city:"New York City",country:"United States")
 
-hp3 = Production.create(title:"Harry Potter and the Prisoner of Azkaban",format:"movie")
-hp4 = Production.create(title:"Harry Potter and the Goblet of Fire",format:"movie")
-hp5 =Production.create(title:"Harry Potter and the Order of the Phoenix",format:"movie")
-hp6 = Production.create(title:"Harry Potter and the Half-Blood Prince",format:"movie")
-hp7 = Production.create(title:"Harry Potter and the Deathly Hallows, Part I",format:"movie")
-billions = Production.create(title:"Billions",format:"TV show")
+hp3 = Production.create(title:"Harry Potter and the Prisoner of Azkaban",format:"movie",image_url:"https://static.wikia.nocookie.net/harrypotter/images/9/9e/Harry_Potter_and_the_Prisoner_of_Azkaban_poster.jpeg/revision/latest?cb=20220922141058")
+hp4 = Production.create(title:"Harry Potter and the Goblet of Fire",format:"movie",image_url:"https://image.tmdb.org/t/p//w780//xXrnAr7bP7DyLeCHmGKNBuC0P6H.jpg")
+hp5 =Production.create(title:"Harry Potter and the Order of the Phoenix",format:"movie",image_url:"https://m.media-amazon.com/images/M/MV5BOTA3MmRmZDgtOWU1Ny00ZDc5LWFkN2YtNzNlY2UxZmY0N2IyXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg")
+hp6 = Production.create(title:"Harry Potter and the Half-Blood Prince",format:"movie",image_url:"https://static.wikia.nocookie.net/moviedatabase/images/f/f0/Harry_Potter_and_the_Half-Blood_Prince.jpg/revision/latest?cb=20200503112811")
+hp7 = Production.create(title:"Harry Potter and the Deathly Hallows, Part I",format:"movie",image_url:"https://boisehighlights.com/wp-content/uploads/2022/05/Harry-Potterrrr-635x900.jpg")
+billions = Production.create(title:"Billions",format:"TV show",image_url:"https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21018599_b_v13_aa.jpg")
 
 hp6_loc = FilmLocation.create(production_id: hp6.id, location_id: mill_bridge.id, scene_description: "Opening sequence when bridge collapses")
 hp5_loc = FilmLocation.create(production_id: hp5.id, location_id: clare_square.id, scene_description: "Exterior of Grimmauld Place")
